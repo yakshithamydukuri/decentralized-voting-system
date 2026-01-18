@@ -8,7 +8,6 @@ BlockVote is a high-fidelity, decentralized voting application (dApp) designed t
 
 ## 📸 Dashboard Preview
 ![Dashboard Screenshot](https://raw.githubusercontent.com/yakshithamydukuri/decentralized-voting-system/main/screenshot.png)
-*(Note: Upload your dashboard screenshot to your repo and update this link to see the image here)*
 
 ## 🚀 Technical Achievements
 - **Robust Security:** Engineered a Solidity 0.8.31 smart contract with one-vote-per-address logic to prevent double-voting.
