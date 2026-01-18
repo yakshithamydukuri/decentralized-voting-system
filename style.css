@@ -1,0 +1,59 @@
+:root {
+    --primary: #00f2ff;
+    --accent: #7000ff;
+    --bg: #030712;
+    --glass: rgba(255, 255, 255, 0.03);
+}
+
+body {
+    margin: 0; background: var(--bg); color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden; min-height: 100vh;
+}
+
+#aura {
+    position: fixed; top: 0; left: 0; width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(0, 242, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%; pointer-events: none; z-index: -1;
+    transform: translate(-50%, -50%); transition: 0.1s ease-out;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+
+.navbar {
+    display: flex; justify-content: space-between; padding: 20px 60px;
+    background: rgba(3, 7, 18, 0.8); backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); position: sticky; top: 0;
+}
+
+.logo { font-size: 1.5rem; font-weight: 800; letter-spacing: 2px; }
+.logo span { color: var(--primary); text-shadow: 0 0 15px var(--primary); }
+
+.gradient-text {
+    font-size: 4rem; font-weight: 800; letter-spacing: -2px;
+    background: linear-gradient(to right, #fff, var(--primary));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+
+.card {
+    background: var(--glass); border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px; padding: 40px; text-align: center;
+    backdrop-filter: blur(10px); transform-style: preserve-3d;
+}
+
+.vote-btn {
+    width: 100%; padding: 15px; margin-top: 30px;
+    background: transparent; border: 1px solid var(--primary);
+    color: var(--primary); border-radius: 12px; font-weight: 800;
+    cursor: pointer; transition: 0.3s; transform: translateZ(20px);
+}
+
+.vote-btn:hover { background: var(--primary); color: #000; box-shadow: 0 0 20px var(--primary); }
+
+.pulse-dot {
+    display: inline-block; width: 10px; height: 10px; background: #00ff41;
+    border-radius: 50%; box-shadow: 0 0 10px #00ff41; animation: pulse 2s infinite;
+}
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }

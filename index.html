@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockVote | Secure Global Governance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="aura"></div>
+
+    <nav class="navbar">
+        <div class="logo">BLOCK<span>VOTE</span></div>
+        <button id="connectButton" class="btn-primary">Connect Wallet</button>
+    </nav>
+
+    <main class="container">
+        <div class="hero">
+            <h1 id="electionName" class="gradient-text">Decentralized Voting</h1>
+            <p id="status"><span class="pulse-dot"></span> System Standby</p>
+        </div>
+        <div id="candidateCards" class="card-grid">
+            <div class="loader">Connect MetaMask to synchronize with Sepolia...</div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
